@@ -13,3 +13,4 @@ U.S. Geological Survey, Utah Cooperative Fish and Wildlife Research Unit, and
 Department of Wildland Resources, Utah State University, Logan, UT 84322-5230 USA  
 
 useRfiles Version Number: V2019.2
+
