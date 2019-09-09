@@ -1,0 +1,41 @@
+---
+title: "Basic Text"
+author: "Student R. Me"
+date: "09 September, 2019"
+output: 
+    html_document:
+        keep_md: true
+    pdf_document: default
+    word_document: default
+---
+
+---
+
+This is text.  Type away to your heart's content ...
+
+There's a rudimentary spell--checker, as well as a search icon, in the toolbar of the upper left RStudio window where you compose the RMD file.
+
+You can also bring text in form elsewhere, such as cut--n--paste from a MS WORD document.  If I'm writing lots of text I write in MS WORD and use the spell--checker there before inserting into the RMD document.
+
+---
+
+### The RMD code used to build the HTML output is in the box below.
+
+    ---
+    title: "Basic Text"
+    author: "Student R. Me"
+    date: "`r format(Sys.time(), '%d %B, %Y')`"
+    html_document:
+        keep_md: true
+    pdf_document: default
+    word_document: default    
+    ---
+    
+    This is text.  Type away to your heart's content ...
+    
+    There's a rudimentary spell--checker, as well as a search icon, in the toolbar of the upper left RStudio window where you compose the RMD file.
+    
+    You can also bring text in from elsewhere, such as cut--n--paste from a MS WORD document.  If I'm writing lots of text I write in MS WORD and use the spell--checker there before inserting into the RMD document.
+    
+    ---
+    
