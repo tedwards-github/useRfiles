@@ -1,0 +1,62 @@
+---
+title: "Embedding and Executing Code"
+author: "Student R. Me"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+    html_document:
+        keep_md: true
+    pdf_document: default
+    word_document: default
+---
+
+---
+
+## Running code
+
+```{r iris_sum}
+# some data analysis
+summary(iris)
+```
+
+## Including Plots
+
+```{r iris_plot}
+# embed a plot
+plot(iris$Sepal.Length)
+```
+
+---
+
+
+### The RMarkdown .rmd code used to build the HTML output is in the box below
+
+    ---
+    title: "Embedding and Executing Code"
+    author: "Student R. Me"
+    date: "`r knitr::inline_expr("format(Sys.time(), '%d %B, %Y')")`"
+    html_document:
+        keep_md: true
+    pdf_document: default
+    word_document: default  
+    ---
+    
+    ---
+    
+    ## Running code
+    
+    ```{r iris_sum}`r ''`
+    # some data analysis
+    summary(iris)
+    ```
+    
+    ## Including Plots
+    
+    ```{r iris_plot}`r ''`
+    # embed a plot
+    plot(iris$Sepal.Length)
+    ```
+    
+    NOTE that both chunks have been named, iris_sum and iris_plot, respectively.  
+    Naming chunks can be useful for debugging purposes.
+    
+    ---
