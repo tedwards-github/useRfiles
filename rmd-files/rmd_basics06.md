@@ -1,0 +1,71 @@
+---
+title: "Links to Websites and Files"
+author: "Student R. Me"
+date: "09 September, 2019"
+output: 
+    html_document:
+        keep_md: true
+    pdf_document: default
+    word_document: default
+---
+
+---
+
+---
+
+## Coding a link to a website:
+
+You can make links explicit, as in "Click [here](https://www.rstudio.com/) to access RStudio."  
+`[here]` becomes the highlighted link to click.  
+The actual link, enclosed by the (), is not visible in the Markdown document.
+
+Or, you can highlight entire phrases, such as "The [R-project homepage](https://www.r-project.org/) is the starting location to learn about R."  
+In this example, the `[R-project homepage]` phrase is the highlighted link to click.
+
+---
+
+## Coding to link to a file:
+
+Files can be a bit trickier, mostly because of file pathnames.  
+For now, we'll assume everything is nestled under your OS home directory.  
+This is what a link to a file, such as a [.pdf](rmd_basics06.pdf), will look like.  
+The `[.pdf]` is the clickable link.
+
+---
+
+### The RMarkdown .rmd code used to build the HTML output is in the box below
+
+    ---
+    title: "Links to Websites and Files"
+    author: "Student R. Me"
+    date: "`r format(Sys.time(), '%d %B, %Y')`"
+    html_document:
+        keep_md: true
+    pdf_document: default
+    word_document: default  
+    ---
+    
+    ---
+    
+    ---
+    
+    ## Coding a link to a website:
+    
+    You can make links explicit, as in "Click [here](https://www.rstudio.com/) to access RStudio."  
+    `[here]` becomes the highlighted link to click.  
+    The actual link, enclosed by the (), is not visible in the Markdown document.
+    
+    Or, you can highlight entire phrases, such as "The [R-project homepage](https://www.r-project.org/) is the starting location to learn about R."  
+    In this example, the `[R-project homepage]` phrase is the highlighted link to click.
+    
+    ---
+    
+    ## Coding to link to a file:
+    
+    Files can be a bit trickier, mostly because of file pathnames.  
+    For now, we'll assume everything is nestled under your OS home directory.  
+    This is what a link to a file, such as a [.pdf](rmd_basics06.pdf), will look like.  
+    The `[.pdf]` is the clickable link.
+    
+    ---
+
