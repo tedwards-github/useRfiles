@@ -3,10 +3,11 @@ title: "A Final **R**Markdown Document in HTML Format"
 author: "Student R. Me"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
-    pdf_document: default
-    word_document: default
     html_document:
         keep_md: true
+        highlight: haddock
+    word_document: default
+    pdf_document: default
 ---
 
 
