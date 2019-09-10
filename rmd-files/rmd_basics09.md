@@ -11,6 +11,7 @@ output:
 
 
 <!-- set root directory here --> 
+<!-- your directory will be specific to you -->
 
 
 ---
@@ -79,8 +80,9 @@ Female        Shad              138
     
     
     <!-- set root directory here --> 
+    <!-- your directory will be specific to you -->
     ```{r global_options, include=FALSE}
-    knitr::opts_knit$set(root.dir = "~/words/classes/markdownR/markdown_html")
+    knitr::opts_knit$set(root.dir = "~/words/github/useRfiles/rmd-files")
     knitr::opts_chunk$set(warning=FALSE)
     ```
     
