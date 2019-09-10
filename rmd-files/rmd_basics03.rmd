@@ -1,0 +1,68 @@
+---
+title: "Boldface, Italics, and Blockquotes"
+author: "Student R. Me"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+    html_document:
+        keep_md: true
+    pdf_document: default
+    word_document: default
+---
+
+---
+
+## Boldface and Italics
+
+Encapsulate a word with ** (two asterik) or __ (two underscores) to **Bold** or __Bold__.
+
+For italics, use a * (single asterisk) or _ (single underscore) for *emphasis* or _emphasis_. 
+
+Use a sequence of *** (three asterik) or ___ (three underscores) to create ***bolded, italicized words***. 
+
+**IMPORTANT**.  There should be no spaces between the first and last characters of the word or phrase to be bolded or italicized. 
+
+---
+
+## The Blockquote
+
+Use the > (greater than) symbol to create a 
+
+> Blockquote for (pithy?) statements.
+
+---
+
+### The RMarkdown .rmd code used to build the HTML output is in the box below
+
+    ---
+    title: "Boldface, Italics, and Blockquotes"
+    author: "Student R. Me"
+    date: "`r knitr::inline_expr("format(Sys.time(), '%d %B, %Y')")`"
+    html_document:
+        keep_md: true
+    pdf_document: default
+    word_document: default  
+    ---
+    
+    ---
+    
+    ## Boldface and Italics
+    
+    Encapsulate a word with ** (two asterik) or __ (two underscores) to **Bold** or __Bold__.
+    
+    For italics, use a * (single asterisk) or _ (single underscore) for *emphasis* or _emphasis_. 
+    
+    Use a sequence of *** (three asterik) or ___ (three underscores) to create ***bolded, italicized words***. 
+    
+    **IMPORTANT**.  There should be no spaces between the first and last characters of the word or phrase to be bolded or italicized. 
+    
+    ---
+    
+    ## The Blockquote
+    
+    Use the > (greater than) symbol to create a 
+    
+    > Blockquote for (pithy?) statements.
+    
+    ---
+
+
