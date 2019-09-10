@@ -1,0 +1,117 @@
+---
+title: "Embed a Picture"
+author: "Student R. Me"
+date: "09 September, 2019"
+output: 
+    html_document:
+        keep_md: true
+    pdf_document: default
+    word_document: default
+---
+
+---
+
+---
+
+## Coding to embed a picture
+
+You can use either the Markdown symbology `![PictureCaption](PictureFilename.Type)` or **.html** `<img src="PictureFilename.Type" />` tag to embed pictures.
+
+(Note: **Always** acknowledge the source if you do not own the picture.)
+
+---
+
+### The Markdown version:
+
+![Source: http://mikemclin.net/markdown-syntax-language/](rmd_image1.png)
+
+---
+
+### The .html version:
+
+Result will be the same as above.  Note that source must be added as a line of text below the picture.
+
+<img src="rmd_image1.png" /> 
+
+Source: http://mikemclin.net/markdown-syntax-language/
+
+---
+
+### Controlling size
+
+You can control the size of the picture using `height=` and `width=` options in the \<img\> tag.
+
+<img src="rmd_image1.png" height="67px" width="100px" /> 
+
+Source: http://mikemclin.net/markdown-syntax-language/
+
+---
+
+### The knitr version, centered with a caption
+
+<div class="figure" style="text-align: center">
+<img src="rmd_image1.png" alt="Source: http://mikemclin.net/markdown-syntax-language/" width="30%" style="background-color: #ffffff; padding:10px; display: inline-block;" />
+<p class="caption">Source: http://mikemclin.net/markdown-syntax-language/</p>
+</div>
+
+---
+
+### The RMarkdown .rmd code used to build the HTML output is in the box below
+
+    ---
+    title: "Embed a Picture"
+    author: "Student R. Me"
+    date: "`r format(Sys.time(), '%d %B, %Y')`"
+    html_document:
+        keep_md: true
+    pdf_document: default
+    word_document: default  
+    ---
+    
+    ---
+    
+    ---
+    
+    ## Coding to embed a picture
+    
+    You can use either the Markdown symbology `![PictureCaption](PictureFilename.Type)` or **.html** `<img src="PictureFilename.Type" />` tag to embed pictures.
+    
+    (Note: **Always** acknowledge the source if you do not own the picture.)
+    
+    ---
+    
+    ### The Markdown version:
+    
+    ![Source: http://mikemclin.net/markdown-syntax-language/](rmd_image1.png)
+    
+    ---
+    
+    ### The .html version:
+    
+    Result will be the same as above.  Note that source must be added as a line of text below the picture.
+    
+    <img src="rmd_image1.png" /> 
+    
+    Source: http://mikemclin.net/markdown-syntax-language/
+    
+    ---
+    
+    ### Controlling size
+    
+    You can control the size of the picture using `height=` and `width=` options in the \<img\> tag.
+    
+    <img src="rmd_image1.png" height="67px" width="100px" /> 
+    
+    Source: http://mikemclin.net/markdown-syntax-language/
+    
+    ---
+    
+    ### The knitr version, centered with a caption
+    
+    The `out.extra='blah blah stuff'` adds a white padding around a picture in a HTML document
+    
+    ```{r echo=FALSE, fig.cap="Source: http://mikemclin.net/markdown-syntax-language/", out.width = '30%', fig.align="center", out.extra='style="background-color: #ffffff; padding:10px; display: inline-block;"'}
+    knitr::include_graphics("rmd_image1.png")
+    ```
+    
+    ---
