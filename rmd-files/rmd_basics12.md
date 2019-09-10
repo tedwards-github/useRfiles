@@ -111,6 +111,55 @@ Table: Fish capture frequency by osprey sex
 
 Table: $\chi^2$ test of fish capture frequency by osprey sex
 
+## R analyses amenable to `pander` table construction
+
+
+```r
+# import data and examine dataframe characteristics
+  library(pander)
+  methods(pander)  # returns available methods for pander
+```
+
+```
+##  [1] pander.anova*           pander.aov*            
+##  [3] pander.aovlist*         pander.Arima*          
+##  [5] pander.call*            pander.cast_df*        
+##  [7] pander.character*       pander.clogit*         
+##  [9] pander.coxph*           pander.cph*            
+## [11] pander.CrossTable*      pander.data.frame*     
+## [13] pander.data.table*      pander.Date*           
+## [15] pander.default*         pander.density*        
+## [17] pander.describe*        pander.ets*            
+## [19] pander.evals*           pander.factor*         
+## [21] pander.formula*         pander.ftable*         
+## [23] pander.function*        pander.glm*            
+## [25] pander.Glm*             pander.gtable*         
+## [27] pander.htest*           pander.image*          
+## [29] pander.irts*            pander.list*           
+## [31] pander.lm*              pander.lme*            
+## [33] pander.logical*         pander.lrm*            
+## [35] pander.manova*          pander.matrix*         
+## [37] pander.microbenchmark*  pander.name*           
+## [39] pander.nls*             pander.NULL*           
+## [41] pander.numeric*         pander.ols*            
+## [43] pander.orm*             pander.polr*           
+## [45] pander.POSIXct*         pander.POSIXlt*        
+## [47] pander.prcomp*          pander.randomForest*   
+## [49] pander.rapport*         pander.rlm*            
+## [51] pander.sessionInfo*     pander.smooth.spline*  
+## [53] pander.stat.table*      pander.summary.aov*    
+## [55] pander.summary.aovlist* pander.summary.glm*    
+## [57] pander.summary.lm*      pander.summary.lme*    
+## [59] pander.summary.manova*  pander.summary.nls*    
+## [61] pander.summary.polr*    pander.summary.prcomp* 
+## [63] pander.summary.rms*     pander.summary.survreg*
+## [65] pander.summary.table*   pander.survdiff*       
+## [67] pander.survfit*         pander.survreg*        
+## [69] pander.table*           pander.tabular*        
+## [71] pander.ts*              pander.zoo*            
+## see '?methods' for accessing help and source code
+```
+
 ---
 
 ### The RMD code used to build the HTML output is in the box below
@@ -181,6 +230,14 @@ Table: $\chi^2$ test of fish capture frequency by osprey sex
       pander(f3, caption = "$\\chi^2$ test of fish capture frequency by osprey sex")
     ```
     
+    ## R analyses amenable to `pander` table construction
+
+    ```{r}
+    # import data and examine dataframe characteristics
+      library(pander)
+      methods(pander)  # returns available methods for pander
+    ```
+
     ---
 
 

@@ -64,6 +64,14 @@ knitr::opts_chunk$set(warning=FALSE)
   pander(f3, caption = "$\\chi^2$ test of fish capture frequency by osprey sex")
 ```
 
+## R analyses amenable to `pander` table construction
+
+```{r}
+# import data and examine dataframe characteristics
+  library(pander)
+  methods(pander)  # returns available methods for pander
+```
+
 ---
 
 ### The RMD code used to build the HTML output is in the box below
@@ -134,6 +142,14 @@ knitr::opts_chunk$set(warning=FALSE)
       pander(f3, caption = "$\\chi^2$ test of fish capture frequency by osprey sex")
     ```
     
+    ## R analyses amenable to `pander` table construction
+
+    ```{r}`r ''`
+    # import data and examine dataframe characteristics
+      library(pander)
+      methods(pander)  # returns available methods for pander
+    ```
+
     ---
 
 
