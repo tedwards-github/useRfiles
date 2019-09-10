@@ -51,7 +51,7 @@ print(xtable(f1), type ="html")
 
 ```
 ## <!-- html table generated in R 3.5.3 by xtable 1.8-4 package -->
-## <!-- Mon Sep 09 19:23:12 2019 -->
+## <!-- Mon Sep 09 19:43:49 2019 -->
 ## <table border=1>
 ## <tr> <th>  </th> <th> ospreysex </th> <th> fishspp </th> <th> count </th>  </tr>
 ##   <tr> <td align="right"> 1 </td> <td> Male </td> <td> Sunfish </td> <td align="right">  59 </td> </tr>
@@ -73,7 +73,7 @@ print(xtable(f1), type = "html", include.rownames = F)  # rendered table in html
 ```
 
 <!-- html table generated in R 3.5.3 by xtable 1.8-4 package -->
-<!-- Mon Sep 09 19:23:12 2019 -->
+<!-- Mon Sep 09 19:43:49 2019 -->
 <table border=1>
 <tr> <th> ospreysex </th> <th> fishspp </th> <th> count </th>  </tr>
   <tr> <td> Male </td> <td> Sunfish </td> <td align="right">  59 </td> </tr>
@@ -82,6 +82,29 @@ print(xtable(f1), type = "html", include.rownames = F)  # rendered table in html
   <tr> <td> Female </td> <td> Bass </td> <td align="right">  21 </td> </tr>
   <tr> <td> Male </td> <td> Shad </td> <td align="right"> 189 </td> </tr>
   <tr> <td> Female </td> <td> Shad </td> <td align="right"> 138 </td> </tr>
+   </table>
+
+Use of the `align =` option for left, right, and centered cell text.  It is simplest to change names outside of the `xtable` call.
+
+
+```r
+# add format:  alignment
+  library(xtable)
+  tab1 <- xtable(f1, align = "llrc")
+  names(tab1) <- c("Sex", "Fish Species", "Frequency")
+  print(tab1, type="html", include.rownames = F)  # rendered table in html format
+```
+
+<!-- html table generated in R 3.5.3 by xtable 1.8-4 package -->
+<!-- Mon Sep 09 19:43:49 2019 -->
+<table border=1>
+<tr> <th> Sex </th> <th> Fish Species </th> <th> Frequency </th>  </tr>
+  <tr> <td> Male </td> <td align="right"> Sunfish </td> <td align="center">  59 </td> </tr>
+  <tr> <td> Female </td> <td align="right"> Sunfish </td> <td align="center">  72 </td> </tr>
+  <tr> <td> Male </td> <td align="right"> Bass </td> <td align="center">  14 </td> </tr>
+  <tr> <td> Female </td> <td align="right"> Bass </td> <td align="center">  21 </td> </tr>
+  <tr> <td> Male </td> <td align="right"> Shad </td> <td align="center"> 189 </td> </tr>
+  <tr> <td> Female </td> <td align="right"> Shad </td> <td align="center"> 138 </td> </tr>
    </table>
 
 ---
@@ -135,6 +158,14 @@ print(xtable(f1), type = "html", include.rownames = F)  # rendered table in html
     # xtable(f1)  NOT RUN: would return a default table of LaTex code
     print(xtable(f1), type = "html", include.rownames = F)  # rendered table in html format
     ```
-    
+    Use of the `align =` option for left, right, and centered cell text.  It is simplest to change names outside of the `xtable` call.
+
+    ```{r, results="asis"}
+    # add format:  alignment
+      library(xtable)
+      tab1 <- xtable(f1, align = "llrc")
+      names(tab1) <- c("Sex", "Fish Species", "Frequency")
+      print(tab1, type="html", include.rownames = F)  # rendered table in html format
+    ```
     ---
 

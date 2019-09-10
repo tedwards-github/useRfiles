@@ -48,6 +48,16 @@ library(xtable)
 print(xtable(f1), type = "html", include.rownames = F)  # rendered table in html format
 ```
 
+Use of the `align =` option for left, right, and centered cell text.  It is simplest to change names outside of the `xtable` call.
+
+```{r, results="asis"}
+# add format:  alignment
+  library(xtable)
+  tab1 <- xtable(f1, align = "llrc")
+  names(tab1) <- c("Sex", "Fish Species", "Frequency")
+  print(tab1, type="html", include.rownames = F)  # rendered table in html format
+```
+
 ---
 
 ### The RMD code used to build the HTML output is in the box below
@@ -99,6 +109,14 @@ print(xtable(f1), type = "html", include.rownames = F)  # rendered table in html
     # xtable(f1)  NOT RUN: would return a default table of LaTex code
     print(xtable(f1), type = "html", include.rownames = F)  # rendered table in html format
     ```
-    
+    Use of the `align =` option for left, right, and centered cell text.  It is simplest to change names outside of the `xtable` call.
+
+    ```{r, results="asis"}`r ''`
+    # add format:  alignment
+      library(xtable)
+      tab1 <- xtable(f1, align = "llrc")
+      names(tab1) <- c("Sex", "Fish Species", "Frequency")
+      print(tab1, type="html", include.rownames = F)  # rendered table in html format
+    ```
     ---
 
