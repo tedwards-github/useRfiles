@@ -76,7 +76,7 @@ Figure size is approximately 6.7 $\times$ 6.7 inches.
     <!-- set root directory here --> 
     <!-- your directory will be specific to you -->
     ```{r global_options, include=FALSE}
-    knitr::opts_knit$set(root.dir = "~/words/classes/markdownR/markdown_html")
+    knitr::opts_knit$set(root.dir = "~/words/github/useRfiles/rmd-files")
     knitr::opts_chunk$set(warning=FALSE)
     ```
     
