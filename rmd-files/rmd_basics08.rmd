@@ -1,0 +1,132 @@
+---
+title: "Pipe and Line Tables"
+author: "Student R. Me"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+    html_document:
+        keep_md: true
+    pdf_document: default
+    word_document: default
+---
+
+---
+
+---
+
+## A simple pipe table with a table description
+
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+|     12  |  34  |  56   |    78  |
+|    901  |  234 |  567  |   890  |
+|      1  |    2 |    3  |     4  |
+
+: Table 1.  Demonstration of pipe table syntax with a table description..
+
+---
+
+## A pipe table with wrap-around text
+
+| Column 1 | Column 2 | Column 3 | Column 4 |
+|:---------|:-----------|:-----------|:----------|
+| Some | This is an exceedingly verbose sentence that should wrap around  | It wraps around | The |
+| column 1 | in | because the pipe length in the 2nd row  | last column |
+| text | Column 2 | is greater than the pipe length in the 1st row. | is 4 | 
+
+---
+
+## A line table of minimal width
+
+-----------------------------
+Default Left   Right  Center
+------- ----- ------ --------
+12      34      56   78 
+
+901     234    567   890 
+
+1       2        3   4
+----------------------------
+
+---
+
+## A line table of expanded width in column 4
+
+-----------------------------
+Default Left   Right  Center
+------- ----- ------ ---------------------
+12      34      56   78 
+
+901     234    567   890 
+
+1       2        3   4
+----------------------------
+
+---
+
+### The RMarkdown .rmd code used to build the HTML output is in the box below
+
+    ---
+    title: "Homework 1"
+    author: "Student R. Me"
+    date: "`r knitr::inline_expr("format(Sys.time(), '%d %B, %Y')")`"
+    html_document:
+        keep_md: true
+    pdf_document: default
+    word_document: default  
+    ---
+    
+    ---
+    
+    ---
+    
+    ## A simple pipe table with a table description
+    
+    | Default | Left | Right | Center |
+    |---------|:-----|------:|:------:|
+    |     12  |  34  |  56   |    78  |
+    |    901  |  234 |  567  |   890  |
+    |      1  |    2 |    3  |     4  |
+    
+    : Table 1.  Demonstration of pipe table syntax with a table description..
+    
+    ---
+    
+    ## A pipe table with wrap-around text
+    
+    | Column 1 | Column 2 | Column 3 | Column 4 |
+    |:---------|:-----------|:-----------|:----------|
+    | Some | This is an exceedingly verbose sentence that should wrap around  | It wraps around | The |
+    | column 1 | in | because the pipe length in the 2nd row  | last column |
+    | text | Column 2 | is greater than the pipe length in the 1st row. | is 4 | 
+    
+    ---
+    
+    ## A line table of minimal width
+    
+    -----------------------------
+    Default Left   Right  Center
+    ------- ----- ------ --------
+    12      34      56   78 
+    
+    901     234    567   890 
+    
+    1       2        3   4
+    ----------------------------
+    
+    ---
+    
+    ## A line table of expanded width in column 4
+    
+    -----------------------------
+    Default Left   Right  Center
+    ------- ----- ------ ---------------------
+    12      34      56   78 
+    
+    901     234    567   890 
+    
+    1       2        3   4
+    ----------------------------
+    
+    ---
+
+
